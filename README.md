@@ -1,52 +1,52 @@
 # 🚀 Auto Scroll AI - YouTube & Facebook
 
-**Auto Scroll AI** একটি শক্তিশালী এবং হালকা ওজনের ব্রাউজার এক্সটেনশন যা আপনার ভিডিও দেখার অভিজ্ঞতাকে আরও সহজ করে তোলে। এটি ইউটিউব শর্টস (YouTube Shorts) এবং ফেসবুক রিলস (Facebook Reels) শেষ হওয়ার সাথে সাথে অটোমেটিক পরবর্তী ভিডিওতে স্ক্রোল করে।
+**Auto Scroll AI** is a powerful and lightweight browser extension designed to enhance your video-watching experience. It automatically scrolls to the next video as soon as the current YouTube Shorts or Facebook Reels ends.
 
 ![Extension Icon](icon.png)
 
-## ✨ বৈশিষ্ট্যসমূহ (Features)
+## ✨ Features
 
-- **অটো-স্ক্রোল:** ভিডিও শেষ হওয়া মাত্রই স্মুথলি পরবর্তী ভিডিওতে নিয়ে যায়।
-- **স্মার্ট টগল:** পপআপ মেনু থেকে যেকোনো সময় সার্ভিসটি অন বা অফ করা যায়।
-- **স্টেট মেমোরি:** ব্রাউজার রিস্টার্ট বা রিফ্রেশ করলেও আপনার সেটিংস (On/Off) মনে রাখে।
-- **মাল্টি-প্ল্যাটফর্ম:** YouTube Shorts এবং Facebook Reels/Watch-এ সমানভাবে কার্যকর।
-- **ডার্ক/লাইট মোড সাপোর্ট:** আধুনিক এবং ক্লিন ইউজার ইন্টারফেস।
+- **Auto-Scroll:** Smoothly transitions to the next video as soon as the current one finishes.
+- **Smart Toggle:** Easily enable or disable the service anytime via the popup menu.
+- **Persistent State:** Remembers your settings (On/Off) even after restarting or refreshing the browser.
+- **Multi-Platform:** Fully compatible with YouTube Shorts and Facebook Reels/Watch.
+- **Modern UI:** Clean user interface with support for both Dark and Light modes.
 
-## 🌐 সমর্থিত ব্রাউজার (Supported Browsers)
+## 🌐 Supported Browsers
 
-- ✅ Firefox (Tested)
+- ✅ Firefox (Tested & Recommended)
 - ✅ Google Chrome
 - ✅ Microsoft Edge
 - ✅ Brave Browser
 
-## 🛠 ইনস্টলেশন গাইড (Installation)
+## 🛠 Installation Guide
 
-### ফায়ারফক্সের জন্য (Firefox):
+### For Firefox (Manual Load):
 
-1. এই রিপোজিটরি থেকে জিপ ফাইলটি ডাউনলোড করে আনজিপ করুন।
-2. ফায়ারফক্সের অ্যাড্রেস বারে `about:debugging#/runtime/this-firefox` লিখুন।
-3. **"Load Temporary Add-on..."** বাটনে ক্লিক করুন।
-4. আপনার ফোল্ডার থেকে `manifest.json` ফাইলটি সিলেক্ট করুন।
+1. Download the ZIP file from this repository and extract it.
+2. Type `about:debugging#/runtime/this-firefox` in the Firefox address bar.
+3. Click the **"Load Temporary Add-on..."** button.
+4. Select the `manifest.json` file from your project folder.
 
-### ক্রোমের জন্য (Chrome/Edge/Brave):
+### For Chrome/Edge/Brave:
 
-1. `chrome://extensions/` লিঙ্কে যান।
-2. **Developer Mode** অন করুন।
-3. **"Load unpacked"** বাটনে ক্লিক করে প্রজেক্ট ফোল্ডারটি সিলেক্ট করুন।
+1. Go to `chrome://extensions/`.
+2. Enable **Developer Mode**.
+3. Click **"Load unpacked"** and select the project folder.
 
-## 👨‍💻 ডেভেলপার (Developer)
+## 👨‍💻 Developer
 
-**OBAYDUL HAQUE AKASH** একজন প্যাশনেট ডেভেলপার যিনি নতুন কিছু তৈরি করতে পছন্দ করেন।
+**OBAYDUL HAQUE AKASH** is a passionate developer who loves creating innovative tools to solve everyday problems.
 
 ---
 
 [<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />](https://www.facebook.com/akash06r)
 [<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/arafat013n)
 
-## 📄 লাইসেন্স (License)
+## 📄 License
 
-এই প্রজেক্টটি MIT লাইসেন্সের অধীনে উন্মুক্ত।
+This project is licensed under the MIT License.
 
 ---
 
-_মেড উইথ ❤️ ইন বাংলাদেশ_
+_Made with ❤️ in Bangladesh_

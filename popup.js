@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggleInput = document.getElementById("toggleBtn");
 
-  // ১. ব্রাউজার স্টোরেজ থেকে স্টেট লোড করা (রিস্টার্ট দিলেও মুছবে না)
+  // 1. Load the current state from storage (remains persistent after restart)
   chrome.storage.local.get(["isEnabled"], (result) => {
     toggleInput.checked = result.isEnabled !== false;
   });
 
-  // ২. স্টেট পরিবর্তন হলে সেভ করা
+  // 2. Save the state when the toggle is changed
   toggleInput.addEventListener("change", () => {
     chrome.storage.local.set({ isEnabled: toggleInput.checked });
   });
 
-  // ৩. সোশ্যাল লিঙ্ক হ্যান্ডেলার
+  // 3. Social link click handlers
   const setupLink = (id, url) => {
     document.getElementById(id).addEventListener("click", (e) => {
       e.preventDefault();
