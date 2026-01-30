@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root {
+        --primary: #6366f1;
+        --bg: #ffffff;
+        --text-main: #1e293b;
+        --yt: #ff0000;
+        --fb: #1877f2;
+        --gh: #24292e;
+      }
+      body {
+        width: 280px;
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg);
+      }
+      .container {
+        padding: 20px;
+      }
+      .header h2 {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+        color: var(--primary);
+        text-align: center;
+      }
+
+      .control-card {
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #e2e8f0;
+        margin-bottom: 20px;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+      }
+      .switch input {
+        display: none;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #cbd5e1;
+        transition: 0.3s;
+        border-radius: 24px;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: var(--primary);
+      }
+      input:checked + .slider:before {
+        transform: translateX(20px);
+      }
+
+      .section-title {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #64748b;
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: block;
+      }
+      .chip-container {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        border: 1px solid #e2e8f0;
+        background: #fff;
+      }
+      .browser-chip {
+        background: #f1f5f9;
+        color: #475569;
+      }
+
+      .dev-footer {
+        background: linear-gradient(135deg, #4f46e5, #9333ea);
+        padding: 15px;
+        border-radius: 12px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .dev-name {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+      }
+      .btn {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: 0.2s;
+      }
+      .fb-btn {
+        background: white;
+        color: var(--fb);
+      }
+      .gh-btn {
+        background: var(--gh);
+        color: white;
+        border: 1px solid #444;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>Auto Scroll AI</h2></div>
+
+      <div class="control-card">
+        <span style="font-weight: 600; font-size: 14px">Enable Service</span>
+        <label class="switch">
+          <input type="checkbox" id="toggleBtn" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <span class="section-title">Supported Platforms</span>
+      <div class="chip-container">
+        <div class="chip" style="color: var(--yt); border-color: #fee2e2">
+          YouTube
+        </div>
+        <div class="chip" style="color: var(--fb); border-color: #dbeafe">
+          Facebook
+        </div>
+      </div>
+
+      <span class="section-title">Compatible Browsers</span>
+      <div class="chip-container">
+        <div class="chip browser-chip">Firefox</div>
+        <div class="chip browser-chip">Chrome</div>
+        <div class="chip browser-chip">Edge</div>
+        <div class="chip browser-chip">Brave</div>
+      </div>
+
+      <div class="dev-footer">
+        <div style="font-size: 9px; opacity: 0.9; margin-bottom: 4px">
+          DEVELOPED BY
+        </div>
+        <div class="dev-name">OBAYDUL HAQUE AKASH</div>
+        <div class="social-links">
+          <a href="#" class="btn fb-btn" id="fbLink">Facebook</a>
+          <a href="#" class="btn gh-btn" id="ghLink">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
